@@ -34,3 +34,10 @@
     border-left: 5px solid orange;
     background-color: #fff6cc;
 }
+/* evidenziare primo e ultimo esercizio*/
+
+.exercise-item:first-child,
+.exercise-item:last-child {
+    border-left: 4px solid #22c55e;
+    background-color: #eafff0;
+}
