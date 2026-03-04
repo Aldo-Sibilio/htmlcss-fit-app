@@ -4,18 +4,20 @@
     font-size: 22px;
     margin-bottom: 4px;
 }
+
 /* evidenziare la terza stat card */
 
 .stats-container .stats-grid:last-child {
     background: linear-gradient(135deg, #4f46e5 0%, #7c3ead 100%);
     color: #fff;
-
-    /* testo bianco sugli elementi interni */
+/* testo bianco sugli elementi interni */
+    
 }
 .stats-container .stats-grid:last-child .stat-number,
 .stats-container .stats-grid:last-child .stat-label {
     color: #fff;
 }
+
 /* effetto over card*/
 .stats-grid,
 .workout-plan,
@@ -28,16 +30,33 @@
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
+
 /* evidenziare il secondo piano di allenamento*/
 
 .workout-plan:nth-of-type(2) {
     border-left: 5px solid orange;
     background-color: #fff6cc;
 }
+
 /* evidenziare primo e ultimo esercizio*/
 
 .exercise-item:first-child,
 .exercise-item:last-child {
     border-left: 4px solid #22c55e;
     background-color: #eafff0;
+}
+
+/* icona fulmine negli esercizi pari*/
+
+.exercise-item:nth-child(even) {
+    position: relative;
+    padding-left: 36px;
+}
+
+.exercise-item:nth-child(even) ::before {
+    content: "\26A1";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
 }
