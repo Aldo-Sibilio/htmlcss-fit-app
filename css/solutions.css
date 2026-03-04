@@ -1,0 +1,6 @@
+.stats-container .stats-grid:first-child .stat-number::before {
+    content: "\1F525"; /* emoji fuoco*/
+    display: block;
+    font-size: 22px;
+    margin-bottom: 4px;
+}
