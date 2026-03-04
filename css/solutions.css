@@ -60,3 +60,16 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+/* Focus sui campi input */
+
+input,
+select {
+    transition: all 0.25s ease;
+}
+input:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #3b82f6;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+}
