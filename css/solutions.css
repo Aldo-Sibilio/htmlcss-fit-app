@@ -73,3 +73,12 @@ select:focus {
     border: 2px solid #3b82f6;
     box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
 }
+
+/* Over sul bottone "Salva Obbiettivi"*/
+.save-btn {
+    transition: all 0.25 ease;
+}
+.save-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
