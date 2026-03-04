@@ -4,3 +4,15 @@
     font-size: 22px;
     margin-bottom: 4px;
 }
+/* evidenziare la terza stat card */
+
+.stats-container .stats-grid:last-child {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3ead 100%);
+    color: #fff;
+
+    /* testo bianco sugli elementi interni */
+}
+.stats-container .stats-grid:last-child .stat-number,
+.stats-container .stats-grid:last-child .stat-label {
+    color: #fff;
+}
